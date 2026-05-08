@@ -176,8 +176,8 @@ The tuned LightGBM significantly outperformed the linear baseline and demonstrat
 
 ```bash
 .
-├── Dubai Residential Property Valuation Model.ipynb        # Main project notebook
-├── model.joblib            # Saved trained model
+├── Dubai Residential Property Valuation Model.ipynb        
+├── model.joblib            
 └── README.md
 ```
 
@@ -231,4 +231,5 @@ Dubai Land Department — Dubai Pulse Open Data Portal
 **Mohamed Irfan**
 
 M.Sc. AI & Computer Science Student
+
 Data Analytics & Machine Learning Enthusiast
