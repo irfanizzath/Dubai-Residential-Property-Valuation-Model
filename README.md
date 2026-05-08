@@ -86,7 +86,6 @@ based on:
 * Property size
 * Area
 * Rooms
-* Building age
 * Transaction timing
 * Nearby infrastructure
 * Property type
@@ -134,52 +133,13 @@ based on:
 * Log transforming skewed numerical variables
 * Outlier treatment using percentile clipping
 
-### Engineered Features
-
-Examples:
-
-* `year`
-* `month`
-* `log_actual_worth`
-* `log_procedure_area`
-* `metro_distance_bin`
-* `mall_distance_bin`
-* `room_group`
-
----
-
-## Exploratory Data Analysis
-
-The notebook includes:
-
-* Price distribution analysis
-* Transaction trend analysis
-* Outlier inspection
-* Correlation analysis
-* Category frequency analysis
-* Time-based market behaviour
-* Residual diagnostics
-* Feature importance visualisations
-* Learning curves
-
 ---
 
 ## Models
 
 ### 1. Linear Regression (Baseline)
 
-Used as an interpretable benchmark model.
-
 ### 2. LightGBM Regressor
-
-Primary model used for final valuation.
-
-Advantages:
-
-* Handles large tabular datasets efficiently
-* Captures nonlinear relationships
-* Strong performance on mixed numerical/categorical data
-* Fast training and inference
 
 ### 3. Tuned LightGBM
 
@@ -216,39 +176,9 @@ The tuned LightGBM significantly outperformed the linear baseline and demonstrat
 
 ```bash
 .
-├── Untitled66.ipynb        # Main project notebook
-├── model.joblib            # Saved trained model (if exported)
-├── requirements.txt        # Project dependencies
+├── Dubai Residential Property Valuation Model.ipynb        # Main project notebook
+├── model.joblib            # Saved trained model
 └── README.md
-```
-
----
-
-## Running the Project
-
-### 1. Clone the repository
-
-```bash
-git clone <your-repo-url>
-cd <repo-name>
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Launch Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-Open:
-
-```bash
-Dubai Residential Property Valuation Model.ipynb
 ```
 
 ---
@@ -272,10 +202,7 @@ Potential future enhancements:
 
 * Geospatial coordinate modelling
 * Deep learning approaches
-* XGBoost / CatBoost comparison
 * Real-time API deployment
-* Streamlit or Flask web app
-* Satellite and image-based features
 * Economic indicator integration
 * Rental price prediction
 
